@@ -26,7 +26,8 @@ class TaskAbout(models.Model):
                              help_text='files for additional explanation')  # to do: add size/type validators
 
     author = models.ForeignKey(to=User, on_delete=models.CASCADE, verbose_name='explanation author')
-
+    primary_task = models.ForeignKey(to='PrimaryTask', on_delete=models.CASCADE, default='1', related_name='task_about',
+                                     verbose_name='task about')
     def __str__(self):
         return self.title
 
@@ -40,6 +41,8 @@ class Subtask(models.Model):
     author = models.ForeignKey(to=User, on_delete=models.CASCADE, verbose_name='subtask author')
     status = models.BooleanField(default=False, verbose_name='subtask status',
                                  help_text='if subtask done - True, if not - False')
+    primary_task = models.ForeignKey(to='PrimaryTask', on_delete=models.CASCADE, default='1', related_name='subtasks',
+                                    verbose_name='primary task')
 
     def __str__(self):
         return self.title
@@ -55,8 +58,6 @@ class PrimaryTask(models.Model):
     time_update = models.DateTimeField(auto_now=True, verbose_name='update time',
                                        help_text='primary task last change time')
     author = models.ForeignKey(to=User, on_delete=models.CASCADE, verbose_name='primary task author')
-    subtask = models.ForeignKey(to=Subtask, on_delete=models.PROTECT, verbose_name='subtask',
-                                help_text='subtask for primary task')
     status = models.ForeignKey(to=TaskStatus, on_delete=models.CASCADE, verbose_name='primary task status',
                                help_text='for example: to do, completed, etc')
 

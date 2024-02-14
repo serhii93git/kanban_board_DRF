@@ -13,9 +13,3 @@ class UserProfileDetailView(RetrieveUpdateDestroyAPIView):
     def get_object(self):
         return UserProfile.objects.get(user=self.request.user)
 
-
-class UserProfileCreateView(CreateAPIView):
-    """Create view for user profile"""
-
-    serializer_class = UserProfileSerializer
-    queryset = UserProfile.objects.all()

@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="611c6cab-926b-4ca8-b1d5-a80407dc2dc2" name="Changes" comment="add user url. add all models to admin.py. before install django-allauth">
-      <change afterPath="$PROJECT_DIR$/kanban/users/signals.py" afterDir="false" />
+    <list default="true" id="611c6cab-926b-4ca8-b1d5-a80407dc2dc2" name="Changes" comment="add signal for user profile auto create after registration. set up redirect after registration to user profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kanban/boards/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/boards/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kanban/boards/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/boards/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kanban/boards/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/boards/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kanban/boards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/boards/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kanban/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kanban/kanban/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/kanban/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kanban/kanban/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/kanban/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kanban/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kanban/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/users/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kanban/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/users/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kanban/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kanban/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kanban/users/views.py" afterDir="false" />
     </list>
@@ -34,6 +34,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -118,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707590063441</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add signal for user profile auto create after registration. set up redirect after registration to user profile">
+      <option name="closed" value="true" />
+      <created>1707602681939</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707602681939</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +147,7 @@
     <MESSAGE value="add media root" />
     <MESSAGE value="add user url. add all models to admin.py" />
     <MESSAGE value="add user url. add all models to admin.py. before install django-allauth" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user url. add all models to admin.py. before install django-allauth" />
+    <MESSAGE value="add signal for user profile auto create after registration. set up redirect after registration to user profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add signal for user profile auto create after registration. set up redirect after registration to user profile" />
   </component>
 </project>
